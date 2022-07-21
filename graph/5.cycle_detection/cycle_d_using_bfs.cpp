@@ -9,6 +9,7 @@ bool check_cycle(int s,int V,vector<int>adj[],vector<int>&visited){
 
     while(!q.empty()){
         auto p = q.front();
+        q.pop();
         int u = p.first
         int parent = u.second
 
