@@ -5,7 +5,7 @@ bool checkCycle(int s, vector<bool>&visited,vector<int>adj[],int parent=-1){
     visited[s]=true;
 
     for(auto x : adj[s]){
-        if(!visited[i]){
+        if(!visited[x]){
             if(checkCycle(x,visited,adj,s)){
                 return true;
             }
