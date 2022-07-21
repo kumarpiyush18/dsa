@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-bool dfsHelper(int s,vector<int>adj,vector<int>&color){
+bool dfsHelper(int s,vector<int>adj[],vector<int>&color){
     if(color[s]==-1)
     color[s]=1;
 
