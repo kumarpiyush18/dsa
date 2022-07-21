@@ -18,7 +18,7 @@ bool check_cycle(int s,int V,vector<int>adj[],vector<int>&visited){
                 q.push({x,u});
             }
             else if(parent != x){
-                return true;
+                return true; // x is visited but its parent is not the previous one so there will be a cycle
             }
         }
     }
